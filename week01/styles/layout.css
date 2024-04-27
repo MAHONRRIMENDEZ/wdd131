@@ -24,7 +24,6 @@ header {
 }
 
 .navigation {
-    display: flexbox;
     
     grid-column: 1 / 8;
     grid-row: 2 / 5;
@@ -32,6 +31,7 @@ header {
 }
 .navigation a{
     color: white;
+    text-align: center;
     text-decoration: none;
     padding: 2rem;
     display: block;
@@ -69,6 +69,14 @@ footer {
     grid-row: 7/8;
 }
 
-
+@media (min-width: 640px){
+    nav ul {
+       display: flex;
+       
+    }
+    nav ul li {
+      flex: 1 1 100%;
+    }
+  }
 
 
