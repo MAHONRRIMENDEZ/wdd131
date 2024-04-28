@@ -8,13 +8,13 @@
     content="This is the main/home page for the project during this course WDD 131: Dynamic Web Fundamentals
     I'll do my best to acheive the goals and the best grade possible by Mahonrri Mendez" />
     <title>WDD 131 - Dynamic Web Fundamentals - Mahonrri Mendez</title>
-
-    <link rel="stylesheet" href="index.html/base.css">
+    <script src="scripts/getdates.js"></script>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
         <h1>WDD 131: Dynamic Web Fundamentals - Mahonrri Mendez</h1>
-        <nav><ul>
+        <nav class="navigation"><ul>
             <li>
                 <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">LinkedIn</a></li>
                                
@@ -31,7 +31,7 @@
     </header>
 
     <main>
-        <section class="card 1">
+        <section class="card1">
             <h2>About Me</h2>
             <p>My name is Mahonrri but my friends and coworkers call me Maho, I was born in Cochabamba Bolivia.
                 I served in Sonora Mexico as a missionary of the church of Jesus Christ of latter-day Saints, from 2018 to 2020,
@@ -39,9 +39,11 @@
                 I'm currently working remotely for USA companies as a client services agent.
                 I love movie nights with my wife and early workouts.
             </p>
+            <div class="city"><p>Cochabamba<p></p></div>
+            <p>Cochabamba is a city in central Bolivia. On a hill in the east, a cable car ascends to the enormous statue of Cristo de la Concordia overlooking the surrounding area. In the center of the city is the Plaza 14 de Septiembre,</p>
         </section>
 
-        <section class="card 2">
+        <section class="card2">
             <h2>Web Dev Resources</h2>
             <p>List of my favorites development resources</p>
             <ul>
@@ -56,6 +58,7 @@
         &copy; <span id="currentyear"></span>
         <p>Mahonrri Mendez | Cochabamba, Bolivia</p>
         <span id="lastModified"></span>
+        <div><img src="images/bandera.jpeg" alt="flag" width="200px"></div>
     </footer>
 </body>
 </html>
