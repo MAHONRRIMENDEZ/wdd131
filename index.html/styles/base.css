@@ -78,13 +78,11 @@ section{
     box-shadow: 0 4px 6px rgba(108, 96, 96, 0.674)
     
 }
- 
+
 .city{
     background-color: #024950;
     color: white
 }
-
- 
     
 
 h2{
@@ -93,12 +91,25 @@ h2{
     padding: 1rem;
 }
 
-.navbar2 {
+.navigation2 a {
+    color: #0FA4AF;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    
 
+}
+.navigation2 li{
+
+    list-style-type: none;    
+}
+.navigation2 a:hover{
+    background-color: hsl(185, 80%, 20%)
 }
 
 footer{
- 
     background-color: #964734;
     padding: 2rem;
     text-align: center;
@@ -106,4 +117,3 @@ footer{
     grid-row: 7/8;
 }
 
-  
