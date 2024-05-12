@@ -24,19 +24,20 @@ h1 {
 
 main {
 	display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     
 }
 
 h2 {
 	color: navy;
 	text-align: left;
-    grid-column: 1/3;
+    grid-column: 1/4;
     padding: 0;
 }
 
 article p {
 	text-align: justify;
+    grid-column: 1/2;
 }
 
 .callout {
@@ -44,7 +45,7 @@ article p {
 	background-color: #8d2552;
     padding: 1rem;
     text-align: center;
-    grid-column: 1/3;
+    grid-column: 1/4;
 }
 
 footer {
