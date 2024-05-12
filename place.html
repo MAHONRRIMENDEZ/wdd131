@@ -18,15 +18,14 @@
 <body>
     <header>
         <H1 class="title">Bolivia</H1>
-        <picture>
-        <source srcset="images/hero-large.webp" media="(min-width: 1200px)" >
-        <source srcset="images/hero-medium.webp" media="(min-width: 640px)" >
-        <img src="images/hero-small.webp" alt="Bolivia" width= "100%" height="100%">
-        </picture>
+        
     </header>
     <main>
-        
-        <section>
+            <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 640px)" >
+            <img src="images/hero-small.webp" alt="Bolivia" width= "100%" height="100%">
+            </picture>
+        <section class="lista">
             <h2>Data</h2>
             <ul>
                 <li><label for="Area">Area:</label>  <p>1,098,581 km²</p>
@@ -48,16 +47,18 @@
             </ul>
         </section>
             
-        <section>
-            <h2>Weather</h2>
+        <section class="lista">
+            <div> <h2>Weather</h2>
+            <img class="imagen-clima" src="images/clima.png"  alt="clima" width="20px" height="20px"></div>
+
             <ul>
-                <li><label for="Area">Area:</label>  <p>170 km²</p>
+                <li><label for="temperature">Temperature:</label>  <p>24°C</p>
                 </li>
-                <li><label for="Area">Area:</label>  <p>170 km²</p>
+                <li><label for="conditions">Conditions:</label>  <p>Partly Cloudy</p>
                 </li>
-                <li><label for="Area">Area:</label>  <p>170 km²</p>
+                <li><label for="wind">Wind:</label>  <p>6 km/h</p>
                 </li>
-                <li><label for="Area">Area:</label>  <p>170 km²</p>
+                <li><label for="wind-Chill">Wind Chill:</label>  <p>8.9 °C</p>
                 </li>
             </ul>
         </section>
