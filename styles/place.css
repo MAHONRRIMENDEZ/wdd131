@@ -1,0 +1,13 @@
+label, p{
+    display: inline;
+}
+
+header{
+    background-color: hsl(0, 55%, 51%);
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
