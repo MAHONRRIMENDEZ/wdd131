@@ -1,27 +1,33 @@
 @media screen and (min-width: 640px){
-    
+    h1 {
+		margin-left: 0;
+		text-align: center;
+	}
+	h2 {
+		text-align: center;
+		color: black;
+	}
+	#menu {
+		display: none;  
+	}
+
+
     header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
 	
-	nav {
-		justify-content: flex-end;
+	.navigation {
+        justify-content: flex-end;
 		flex-direction: row;
+        
 	}
-	nav a {
+	.navigation a {
+        display: block;
 		flex: 1 1 100%;
 	}
-	nav ul li:first-child {
-        display: none;
-    }
-	.menu ul li {
-		display: inline-block;
-		margin-right: 20px; 
-		
-		
-	}
+	
     .pictures {
         display: grid;
         grid-template-columns: 1fr 1fr;

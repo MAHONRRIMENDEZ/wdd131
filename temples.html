@@ -12,25 +12,19 @@
     <!--  links for CSS and js  -->
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="script/temples.js"></script>
+    
 </head>
 <body>
     <header>
-        
-        <h1>Temple Album</h1>
-        
-        <div class="menu"> 
-            <nav>
-                <ul id="menu">
-                        <li><a id="toggleMenu">&equiv;</a></li> 
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Old</a></li>
-                        <li><a href="">New</a></li>
-                        <li><a href="">Large</a></li>
-                        <li><a href="">Small</a></li>
-                </ul>
+        <h1>Temples Album</h1>
+        <button id="menu"></button>
+            <nav class="navigation">
+                <a href="#" title="Home">Home</a>
+                <a href="#" title="About Us">Old</a>
+                <a href="#" title="New">New</a>
+                <a href="#" title="Large">Large</a>
+                <a href="#" title="Small">Small</a>
             </nav>
-        </div>
     </header>
     <main>
         <h2 class="title">Home</h2>
@@ -81,14 +75,13 @@
                 </figure>
             </div>
     </main>
-    <footer class="limited">
-        <div class="row">
-            <section class="column">
-                &copy; <span id="copyrightYear"></span> | Mahonrri Mendez | Cochabamba, Bolivia<br>
-                Last Updated: <span id="lastUpdated"></span>                
-            </section>
-        </div>  
-    </footer>    
-        
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            ©️ Mahonrri Mendez | Cochabamba Bolivia <br>
+            <p id="lastModified"></p>
+        </p>
+    </footer>
+    <script src="scripts/temples.js" ></script> 
 </body>
 </html>

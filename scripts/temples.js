@@ -1,16 +1,22 @@
-function dateTime() {
-    var dateTime = new Date();
-    var date = dateTime.toLocaleDateString();
-    
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-    var dateTimeString = date;
-    
-    document.getElementById("dateTime").innerText = dateTimeString;
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+
+function getCurrentYear() {
+    const currentYearElement = document.getElementById('currentyear');
+    const currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
 }
-setInterval(dateTime, 1000);
 
-let lastUpdated = new Date(document.lastModified).toLocaleString();
-document.getElementById("lastUpdated").innerHTML = lastUpdated;
-
-let copyrightYear = new Date().getFullYear();
-document.querySelector("#copyrightYear").innerHTML = copyrightYear;
+function getLastModifiedDate() {
+    const lastModifiedElement = document.getElementById('lastModified');
+    const lastModified = new Date(document.lastModified);
+    const formattedDate = `${lastModified.getDate()}/${lastModified.getMonth() + 1}/${lastModified.getFullYear()} ${lastModified.getHours()}:${lastModified.getMinutes().toString().padStart(2, '0')}`;
+    lastModifiedElement.textContent = `Last Modified: ${formattedDate}`;
+}
+getCurrentYear();
+getLastModifiedDate();
