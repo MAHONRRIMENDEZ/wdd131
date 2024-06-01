@@ -1,15 +1,14 @@
-section {
-    background: #fff;
-    padding: 20px;
-    margin-top: 20px;
+main, figure{
+    background: #ede8e8;
+    
 }
 figure {
-    margin: 20px;
-    padding: 5%;
-    border: 1px solid #ccc;
     text-align: center;
 }
-
+.menu {
+    display: flex;
+    flex-direction: column; 
+}
 
 
 /* large menu */
@@ -23,15 +22,12 @@ figure {
     
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1250px) {
     .menu {
         grid-template-columns: 1fr 1fr 1fr;
         
     }
-    .helado {
-        width: 380px;
-        height:290px;
-    }
+    
     
     
 }
