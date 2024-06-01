@@ -5,7 +5,8 @@
 	}
 	h2 {
 		text-align: center;
-		color: black;
+		color: black;    
+        margin-top: 2%;
 	}
 	#menu {
 		display: none;  
@@ -36,14 +37,26 @@
         text-align: center;
         margin: 10px;
         
+        
+    }
+    img {
+        margin-top: 5%;
     }
 }
 @media only screen and (min-width: 1040px) {
-    .pictures {
+    .pictures img{
         grid-template-columns: 1fr 1fr;
+        margin-top: 5%;
+    }
+    img {
+        width: 380px;
+        height:290px;
     }
     .navigation a {
         display: block;
 		flex: 1 1 100%;
+	}
+    h2 {
+        margin-top: 1%;
 	}
 }
