@@ -1,0 +1,37 @@
+section {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+figure {
+    margin: 20px;
+    padding: 5%;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+
+/* large menu */
+@media screen and (min-width: 640px){
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+    
+}
+
+@media only screen and (min-width: 1040px) {
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .helado {
+        width: 380px;
+        height:290px;
+    }
+    
+    
+}
