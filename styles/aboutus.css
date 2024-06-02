@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+main {
+    background-color: #ede8e8;
+}
+h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#vision, #mision, #valores{
+    background-color: #ebdcdc;
+    margin: 1rem;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border: 1px solid;
+    justify-content: right;
+}
+footer, p{
+    display: flex;
+	flex: 1;
+    margin-right: 10px;
+}
+.social {
+    padding: 0;
+    list-style: none;
+    
+}
+.social li{
+    display: inline;
+    
+}
+.social li a {
+    color: white;
+    text-decoration: none;
+    
+}
+.social a:hover {
+	color: #030101;
+    margin: 1px;
+    background-color: #cf6b86;
+}
+
+@media screen and (min-width: 1020px){
+
+h2 {
+    margin-bottom: 3%;
+    margin-top: -7%;
+}
+}

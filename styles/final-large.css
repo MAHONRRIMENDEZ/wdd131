@@ -47,7 +47,7 @@
 @media only screen and (min-width: 1040px) {
     .pictures img{
         grid-template-columns: 1fr 1fr;
-        margin-top: 5%;
+        margin-top: 1%;
     }
     img {
         width: 380px;
@@ -58,8 +58,8 @@
 		flex: 1 1 100%;
 	}
     h2 {
-        margin-top: -2%;
-        margin-bottom: -10%;
+        margin-top: -10%;
+        margin-bottom: 0;
         
     }
     figure{
