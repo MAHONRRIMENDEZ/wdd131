@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Mahonrri Mendez" />
+    <meta name="description"
+    content="This page will work as form for the bussiness orders" />
+    
+    <title>Delivery Service</title>
     <link rel="stylesheet" href="styles/final.css">
     <link rel="stylesheet" href="styles/final-large.css">
+    <link rel="stylesheet" href="styles/delivery.css">
 </head>
 <body>
     <header>
@@ -17,8 +22,53 @@
                 <a href="menu.html" title="Menu">Menú</a>
                 <a href="delivery.html" title="Delivery">Delivery</a>
     </header>
+    <main>
+        <h2 class="title">¿Para llevar?</h2>
+        <form action="pedido.html" method="get">
+            <label class="tipo_entrega" for="producto" >Tipo de entrega 
+                    <select name="producto" id="producto" required>
+                        <option disabled selected value="">Delivery o recojo en tienda? </option>
+                    </select>
+            </label>
+
+            <fieldset class="check">
+                <legend class="seleccion_pedidos">Escoje los productos que llevarás (para cantidades usa las notas)</legend>
+
+                    <input type="checkbox" id="vainilla" name="vainilla">
+                    <label for="durability">Helado de Vainilla</label>
+                    
+                    <input type="checkbox" id="fresa" name="fresa">
+                    <label for="Ease_use">Helado de Fresa</label>
+
+                    <input type="checkbox" id="chocolate" name="chocolate">
+                    <label for="performance">Helado de Chocolate</label>
+
+                    <input type="checkbox" id="acai" name="acai">
+                    <label for="design">Acai</label>
+
+                    <input type="checkbox" id="brownie" name="brownie">
+                    <label for="design">Brownie</label>
+
+                    <input type="checkbox" id="empanada" name="empanada">
+                    <label for="design">Empanada</label>
+
+                    <input type="checkbox" id="acai" name="acai">
+                    <label for="design">Botella de Agua personal</label>
+            </fieldset>
+
+            <label class="notas" for="review">Notas</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label class="direccion" for="review">Dirección</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label class="nombre" for="user_name">Nombre</label>
+            <input type="text" id="user_name" name="user_name">
+
+            <button type="submit" class="button">Enviar</button>
+        </form>
+    </main>
     
-    <h1>Here are the delivery request</h1>
     <footer>
         <p>
             <span id="currentyear"></span>

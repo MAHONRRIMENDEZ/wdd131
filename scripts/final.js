@@ -20,3 +20,28 @@ function getLastModifiedDate() {
 }
 getCurrentYear();
 getLastModifiedDate();
+
+
+const products = [
+    {
+    name: "Envio a domicilio",
+    },
+    {
+    
+    name: "Recoger en el local",
+    },
+
+];
+
+const product_select = document.querySelector("#producto");
+
+
+addProductOptions();
+
+function addProductOptions(){
+products.forEach(product => {
+    let option = document.createElement("option");
+    option.textContent = product.name;
+    product_select.appendChild(option);
+});
+}
