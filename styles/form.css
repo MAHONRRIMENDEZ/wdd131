@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 2rem 
+}
+
+h1{
+    background-color:rgb(76, 162, 219) ;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+}
+
+form{
+    background: rgb(209, 219, 227);
+    padding: 1rem;
+}
+form label{
+    width: 100%;
+    text-align: left;
+}
+
+.item1{
+    font-family: var(--heading-font);
+    text-align: left;
+    margin-top: 1rem;
+}
+.item3, .item4, .item5, .item6{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#product{
+    width: 100%;
+    padding: 1rem 1rem;
+    
+}
+
+
+fieldset{
+    border:none;
+}
+
+input[type="date"], 
+input[type="text"],
+select,
+textarea{
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.star-rating {
+    display: flex;
+    width: 180px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    color: rgb(115, 156, 212);
+}
+
+.star-rating label:active::before {
+    transform:scale(1.1);
+}
+.star-rating input:checked ~ label:before {
+    content:'\2605';
+}
+.star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    line-height: 26px;
+}
+.check{
+    
+    display: grid;
+    grid-template-columns: 2rem auto;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+
+button[type="submit"]{
+    width: 100%;
+    background-color: rgb(84, 193, 214);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .5rem.5rem;
+    margin-top: 1rem;
+}
+
+/*review.html */
+.thanks{
+    
+    font-size: 2rem;
+    padding: 1rem;
+}
+.back{
+    color: rgb(101, 149, 191);
+    margin-top: 1rem;
+    padding: 1rem;
+    
+}
+
+footer{
+    background-color: rgb(162, 183, 207);
+    padding:1rem;
+    margin-top: 1rem;
+    text-align: center;
+    
+}

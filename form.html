@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+
+    <!-- meta author and description-->
+    <meta name="author" content="Mahonrri Mendez" />
+    <meta name="description"
+    content="This page will work as form to rate a product" />
+    <!--  links for CSS and js-->
+    <link rel="stylesheet" href="styles/form.css">
+    
+</head>
+
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get">
+            <label class="item1" for="product" >Product 
+                <select name="product" id="product" required>
+                    <option disabled selected value="">Choose a product</option>
+                </select>
+            </label>
+            <fieldset   class="star-rating" >
+                    <legend class="item2">Overall Rating</legend>
+                    
+            
+                    <input type="radio" name="stars" id="star-a" value="5" >
+                    <label for="star-a" ></label>
+            
+                    <input type="radio" name="stars" id="star-b" value="4"  >
+                    <label for="star-b" ></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3"  >
+                    <label for="star-c" ></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2" >
+                    <label for="star-d" ></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1"  >
+                    <label for="star-e" ></label>
+            </fieldset>
+
+            <label  class="item3" for="date_installation" >Date of Installation</label>
+            <input type="date" id="date_installation" name="date_installation" required>
+
+            <fieldset class="check">
+                <legend class="item4">What features did you find useful about the product?</legend>
+
+                    <input type="checkbox" id="durability" name="durability">
+                    <label for="durability">Durability</label>
+                    
+                    <input type="checkbox" id="Ease_use" name="Ease_use">
+                    <label for="Ease_use">Ease of Use</label>
+
+                    <input type="checkbox" id="performance" name="performance">
+                    <label for="performance">Performance</label>
+
+                    <input type="checkbox" id="design" name="design">
+                    <label for="design">Design</label>
+
+                    
+            </fieldset>
+
+            <label class="item5" for="review">Written Review (Optional)</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label class="item6" for="user_name">Your name (Optional)</label>
+            <input type="text" id="user_name" name="user_name">
+
+            <button type="submit" class="boton">Submit</button>
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            ©️ Mahonrri Mendez | Cochabamba Bolivia <br>
+            <p id="lastModified"></p>
+        </p>
+    </footer>
+    <script src="scripts/form.js" ></script> 
+</body>
+</html>
